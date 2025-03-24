@@ -11,10 +11,10 @@ BMI = Weight / (height)*(height)
 Here your BMI is calculated and based on the BMI value you will be assigned a category which you belongs to.
 
 # 2. Loan calculator
-Here i have implemented two types of loan calculations based on the type of interest.
-1.Simple Interest 2.Compound Interest
-It takes 3 parameters Principal , Rate of Interest (per year) , Time (in years)
-Based on the User's type of interest it will calculate the Interest and total amount he has to pay after Time.
+- Here i have implemented two types of loan calculations based on the type of interest.
+- 1.Simple Interest 2.Compound Interest
+- It takes 3 parameters Principal , Rate of Interest (per year) , Time (in years)
+- Based on the User's type of interest it will calculate the Interest and total amount he has to pay after Time.
 
 # 3. Income Tax Calculator
 I have implemented a income tax calculator which uses the latest tax system FY-2025-26
@@ -37,7 +37,7 @@ JavaScript is used for implementing the logic of the calculators.
 
 # Functionality
 At an initial page it will be default set to BMI calculator.
-Based om the user's need of calculator it automatically switches between all different calculators.
+Based on the user's need of calculator it automatically switches between all different calculators.
 Only the selected calculator is displayed at a time, while others remain hidden.
 Results are shown dynamically on the same webpage based on user input.
 This tool helps users by reducing time spent searching for different calculators.
