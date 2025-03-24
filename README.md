@@ -11,10 +11,10 @@ BMI = Weight / (height)*(height)
 Here your BMI is calculated and based on the BMI value you will be assigned a category which you belongs to.
 
 # 2. Loan calculator
-- Here i have implemented two types of loan calculations based on the type of interest.
-- 1.Simple Interest 2.Compound Interest
-- It takes 3 parameters Principal , Rate of Interest (per year) , Time (in years)
-- Based on the User's type of interest it will calculate the Interest and total amount he has to pay after Time.
+Here i have implemented two types of loan calculations based on the type of interest.
+1.Simple Interest 2.Compound Interest
+It takes 3 parameters Principal , Rate of Interest (per year) , Time (in years)
+Based on the User's type of interest it will calculate the Interest and total amount he has to pay after Time.
 
 # 3. Income Tax Calculator
 I have implemented a income tax calculator which uses the latest tax system FY-2025-26
