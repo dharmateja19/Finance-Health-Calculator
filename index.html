@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Purpose Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Multi-Purpose Calculator</h1>
+        <select id="calculatorType" onchange="switchCalculator()">
+            <option value="bmiCalculator">BMI Calculator</option>
+            <option value="loanCalculator">Loan Calculator</option>
+            <option value="taxCalculator">Tax Calculator</option>
+            <option value="normalCalculator">Normal Calculator</option>
+            <option value="binaryCalculator">Binary-Decimal Converter</option>
+        </select>
+
+        <div id="bmiCalculator" class="calculator">
+            <h2>BMI Calculator</h2>
+            <input type="number" id="weight" placeholder="Weight (kg)">
+            <input type="number" id="height" placeholder="Height (m)">
+            <button onclick="calculateBMI()">Calculate BMI</button>
+            <p id="bmiResult"></p>
+        </div>
+
+        <div id="loanCalculator" class="calculator hidden">
+            <h2>Loan Calculator</h2>
+            <input type="number" id="loanAmount" placeholder="Loan Amount (₹ )">
+            <input type="number" id="interestRate" placeholder="Interest Rate (%)">
+            <input type="number" id="loanTerm" placeholder="Loan Term (years)">
+            <select id="interestType">
+                <option value="simple">Simple Interest</option>
+                <option value="compound">Compound Interest</option>
+            </select>
+            <button onclick="calculateLoan()">Calculate Loan</button>
+            <p id="loanResult"></p>
+        </div>
+
+        <div id="taxCalculator" class="calculator hidden">
+            <h2>Tax Calculator</h2>
+            <input type="number" id="income" placeholder="Annual Income (₹)">
+            <button onclick="calculateTax()">Calculate Tax</button>
+            <p id="taxResult"></p>
+        </div>
+
+        <div id="normalCalculator" class="calculator hidden">
+            <h2>Normal Calculator</h2>
+            <input type="text" id="calcInput" placeholder="Enter expression (e.g., 5+3*2)">
+            <button onclick="calculateExpression()">Calculate</button>
+            <p id="calcResult"></p>
+        </div>
+
+        <div id="binaryCalculator" class="calculator hidden">
+            <h2>Binary-Decimal Converter</h2>
+            <select id="binaryType">
+                <option value="binaryToDecimal">Binary to Decimal</option>
+                <option value="decimalToBinary">Decimal to Binary</option>
+            </select>
+            <input type="text" id="binaryInput" placeholder="Enter Number">
+            <button onclick="convertBinary()">Convert</button>
+            <p id="binaryResult"></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
